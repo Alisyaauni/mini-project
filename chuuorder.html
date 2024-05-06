@@ -1,0 +1,300 @@
+<html>
+<head>
+<title>Order</title>
+    <style>
+        .option-name {
+            font-size: 17px; 
+            font-weight: bold; 
+            color: #27457C;
+        }
+        .option-pick {
+            font-size: 14px; 
+            color: #727779;
+        }
+        /* Center-align table cells */
+        td {
+            text-align: center;
+            padding: 20px; /* Add space around the content */
+        }
+    </style>
+</head>
+<body>
+
+<br> <right> <img src="chulogo.jpeg" width="60" height="70"> </br> </right> 
+<br> <center> <img src="lastchu.jpeg" width="185" height="250"> </br> </center> 
+<b><h1 align="center"> <font color= "#DA0088 "> Chuujuna Special </h1></font></b>
+<b><h2 align="center"> <font color= "#27457C "> RM 9.90 </h2></font></b>
+<h4 align="center"> <font color= "#27457C"> Pink is the new Black! Our Chuujuna Special mixologist concocted this Lychee Lemonade with Espresso</h4> </font>
+<h4 align="center"> <font color= "#27457C"> especially for its attractive contrast in color and fabulous flavor combination. </h4> </font>
+<h4 align="center"> <font color= "#27457C"> It's a must-try! </h4> </font> <br></br>
+
+<!-- Form Section -->
+<table style="margin: 0 auto;">
+  <tr>
+    <!-- Coffee Form -->
+    <td>
+      <b><h2><font color="black">Coffee</font></h2></b>
+      <input type="radio" name="coffee_choice" value="standard"> <span class="option-name">Standard</span> (Default) 
+      <br>
+      <input type="radio" name="coffee_choice" value="add_shot"> <span class="option-name">Add Shot</span> (+RM2.00)
+    </td>
+	
+    <!-- Choose Your Bean Form -->
+    <td>
+      <b><h2><font color="black">Choose your bean <span class="option-pick">*pick 1</span></font></h2></b>
+      <input type="radio" name="bean_choice" value="boss"> <span class="option-name">BOSS</span> (Dark chocolate, Smokey)
+      <br>
+      <input type="radio" name="bean_choice" value="lydia"> <span class="option-name">LYDIA</span> (Fruity, Nutty) 
+    </td>
+ 	
+    <!-- Sweetness Form -->
+    <td>
+      <b><h2><font color="black">Sweetness</font></h2></b>
+      <input type="radio" name="sweetness_choice" value="standard"> <span class="option-name">Regular Sugar</span> (Default )
+      <br>
+      <input type="radio" name="sweetness_choice" value="add_shot"> <span class="option-name">Less Sugar</span> 
+    </td>
+  </tr>
+</table>
+
+<table style="margin: 0 auto;">
+  <tr>
+    <!-- Ice Level Form -->
+    <td>
+      <b><h2><font color="black">Ice Level</font></h2></b>
+      <b><span class="option-pick">*No/Less Ice option </span></b><br>
+	  <b><span class="option-pick"> will result in lesser</span></b><br>
+	   <b><span class="option-pick"> beverage quantity</span><br></br></b>
+      <input type="radio" name="ice_level_choice" value="standard"> <span class="option-name">Normal Ice</span> (Default )
+      <br>
+      <input type="radio" name="ice_level_choice" value="add_shot"> <span class="option-name">Less Ice</span> 
+      <br>
+    </td>
+  
+    <!-- Topping Form -->
+    <td>
+      <b><h2><font color="black">Topping <span class="option-pick">*select up to 1</span></font></h2></b>
+      <b><span class="option-pick">Disclaimer: Velvet Creme contains dairy </span></b><br>
+      <b><span class="option-pick">ingredients. Kindly consume at your own risk</span></b>
+      <br><br>
+      <input type="checkbox" name="topping_choice" value="no_topping"> <span class="option-name">No Topping</span> (Default)
+      <br>
+      <input type="checkbox" name="topping_choice" value="coffee_jelly"> <span class="option-name">Add Coffee Jelly </span> (+RM1.90)
+      <br>
+      <input type="checkbox" name="topping_choice" value="velvet_creme"> <span class="option-name">Velvet Creme </span> (+RM2.00)
+    </td>
+
+    <!-- Drizzle Form -->
+    <td>
+      <b><h2><font color="black">Drizzle <span class="option-pick">*select up to 1</span></font></h2></b>
+      <input type="checkbox" name="drizzle_choice" value="caramel"> <span class="option-name">Caramel</span> (+RM1.90)
+      <br>
+      <input type="checkbox" name="drizzle_choice" value="chocolate"> <span class="option-name">Chocolate </span> (+RM1.90)
+      <br>
+      <input type="checkbox" name="drizzle_choice" value="gula_melaka"> <span class="option-name">Gula Melaka </span> (+RM2.00)
+    </td>
+  </tr>
+</table>
+
+<table style="margin: 0 auto;">
+  <tr>
+ 
+    <!-- Whipped Cream Form -->
+    <td>
+      <b><h2><font color="black">Whipped Cream</font></h2></b>
+      <input type="radio" name="whipped_cream" value="standard"> <span class="option-name">Add Whipped Cream</span> (+RM2.00)
+      <br>
+    </td>
+	</table>
+
+<br>
+<br>
+
+
+<table=align left>
+<tr>
+   <td> Notes:</td>
+    <td>
+      <textarea rows="6" cols="40">Type your note here</textarea>
+    </td>
+  </tr>
+  <tr>
+    <td></td>
+    <td>
+      <input type="Submit" value="Submit">
+      <input type="Reset" value="Reset">
+    </td>
+  </tr>
+</table>
+
+<br>
+<br>
+<br>
+</br>
+
+
+ <style>
+        /* CSS style for buttons */
+        .button-container {
+            text-align: center; /* Center-align the buttons */
+        }
+
+        .button-container button {
+            padding: 10px 20px; /* Adjust padding to increase button size */
+            font-size: 16px; /* Adjust font size */
+            margin-right: 10px; /* Add some space between buttons */
+        }
+    </style>
+	
+<div class="button-container">	
+<button type="button">-</button> 
+<button type="button">1</button>
+<button type="button">+</button>
+</div>
+	
+<br></br>	
+	
+<div class="button-container">
+<button type="button">Order Now</button>
+<button type="button"><a href="http://localhost/addtocart.html">Add to Cart</button></a>
+
+</div>
+
+<br>
+<br>
+<br>
+</br>
+
+<h2 align="center"> <font color= "#42496C "> You Might Also Like </h2> </font> 
+<h4 align="left"> <font color= "black"> <tr><td>Do You Want To Add Any Of This? </td><td></h4> </font>
+<select name="How"> 
+<option value="1">BBQ Peanut Crunch</option>
+<option value="2">Dark Chocolate Chip Cookies </option>
+<option value="3"> Butterscoth Cashew Chocolate Chip Cookies</option>
+<option value="4">None </option>
+</select></td></tr>
+<br>
+<br>
+</br>
+
+
+
+ <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            margin: 0 10px; /* Adjust margin as needed */
+        }
+    </style>
+	
+<div class="container">
+<img src="biskut1.jpeg" width="120" height="130">
+<h4 align="left"> <font color= "#42496C "> BBQ Peanut Crunch </h4> </font> (RM8.00) 
+<img src="biskut2.jpeg" width="120" height="130"> 
+<h4 align="left"> <font color= "#42496C "> Dark Chocolate Chip Cookies </h4> </font> (RM8.00)
+<img src="biskut3.jpeg" width="120" height="130">
+<h4 align="left"> <font color= "#42496C "> Butterscoth Cashew Chocolate Chip Cookies </h4> </font> (RM8.00)
+</div>
+
+<br><br></br>
+
+ <style>
+        /* CSS style for buttons */
+        .button-container {
+            text-align: center; /* Center-align the buttons */
+        }
+
+        .button-container button {
+            padding: 10px 20px; /* Adjust padding to increase button size */
+            font-size: 16px; /* Adjust font size */
+            margin-right: 10px; /* Add some space between buttons */
+        }
+    </style>
+	
+<div class="button-container">	
+<button type="button">-</button> 
+<button type="button">1</button>
+<button type="button">+</button>
+</div>
+	
+<br>
+<br>
+<br>
+</br>
+<h2 align="center"> <font color= "#42496C "> About The Drink </h2> </font> 
+<center><img src="lastchu.jpeg" width="130" height="170"></center>
+<h4 align="center"> <font color= "#42496C "> Our Chuujuna drink is special for a reason! It not only delivers a </h4> </font> 
+<h4 align="center"> <font color= "#42496C "> sensational mouthfeel of fizziness and espresso, but also offers  </h4> </font> 
+ <h4 align="center"> <font color= "#42496C "> a delightful balance of sweet, tangy, and cuteness!  </h4> </font> 
+<br>
+</br>
+
+ <style>
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container img {
+            margin: 0 10px; /* Adjust margin as needed */
+        }
+    </style>
+	
+<h2 align="center"> <font color= "#42496C "> Ingredients</font> </h2>
+<div class="container">
+    <img src="espresso.jpeg" width="120" height="130">
+    <img src="lemon.jpeg" width="120" height="130">
+    <img src="lychee.jpeg" width="120" height="130">
+    <img src="soda.jpeg" width="120" height="130">
+</div>
+
+<br></br>
+
+<h2 align="center"> <font color= "#42496C "> Nutrition </font> </h2>
+<h4 align="center"> <font color= "#435F20  "> Nutrition information is calculated based on our default</font> </h4>
+<h4 align="center"> <font color= "#435F20   "> recipes. Information will be vary with any customisations. </font> </h4>
+
+<br></br>
+
+ <style>
+        table {
+            margin: 0 auto; /* Center-align the table */
+        }
+ </style>
+
+<h2 align="center"> <font color="#42496C"> Serving Size 16oz </font> </h2> 
+
+<table border="1">
+    <tr> 
+        <td bgcolor="#C7F5F2 "> Energy / Calories (kcal) </td>
+        <td bgcolor="#FDFF9A"> 61 </td>
+    </tr>
+    <tr> 
+        <td bgcolor="#C7F5F2"> Total Carbohydrate (g) </td>
+        <td bgcolor="#FDFF9A"> 14.2 </td>
+    </tr>
+    <tr> 
+        <td bgcolor="#C7F5F2"> Sugar (g) </td>
+        <td bgcolor="#FDFF9A"> 11.8 </td>
+    </tr>
+    <tr> 
+        <td bgcolor="#C7F5F2"> Protein (g) </td>
+        <td bgcolor="#FDFF9A"> 1.4 </td>
+    </tr>
+    <tr> 
+        <td bgcolor="#C7F5F2"> Fat (g) </td>
+        <td bgcolor="#FDFF9A"> 0 </td>
+    </tr>
+    <tr> 
+        <td bgcolor="#C7F5F2"> Sodium (mg) </td>
+        <td bgcolor="#FDFF9A"> 232 </td>
+    </tr>
+</table>
+
+
+</body>
+</html>
+

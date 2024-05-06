@@ -1,0 +1,127 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuu Coffee - Order Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #d9b99b;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-top: 50px;
+        }
+        h1 {
+            text-align: center;
+        }
+        .coffee-item {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+        .coffee-item img {
+            max-width: 100px;
+            height: auto;
+        }
+        .quantity-input {
+            width: 50px;
+        }
+        .btn-checkout {
+            padding: 10px 20px;
+            background-color: #d9b99b;
+            color: black;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 20px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .cart-summary {
+            border-top: 2px solid #ccc;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .total-price {
+            text-align: right;
+            font-weight: bold;
+        }
+        .payment-info {
+            margin-top: 20px;
+            border-top: 2px solid #ccc;
+            padding-top: 20px;
+        }
+        .payment-info h2 {
+            margin-bottom: 10px;
+        }
+        .payment-info p {
+            margin: 5px 0;
+        }
+        .payment-method {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chuu Coffee - Order Summary</h1>
+        <div class="coffee-item">
+            <img src="latte.png" alt="Zerolatte">
+            <div>
+                <h2>ZERO LATTE</h2>
+                <p>Qty <input type="number" class="quantity-input" value="1" min="1"></p>
+                <p>Dairy Milk|Standard|Regular sugar|<br>Normal ice| No Topping</p>
+                <p>$5.99</p>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="spanishlatte.png" alt="Spanishlatte">
+            <div>
+                <h2>SPANISH LATTE</h2>
+                <p>Qty <input type="number" class="quantity-input" value="1" min="1"></p>
+                <p>Dairy Milk|Standard|Regular sugar|<br>Normal ice| No Topping</p>
+                <p>$6.99</p>
+            </div>
+        </div>
+        <div class="coffee-item">
+            <img src="CaramelCreamFrappe.png" alt="CaramelCreamFrappe">
+            <div>
+                <h2>CARAMEL FRAPPE</h2>
+                <p>Qty <input type="number" class="quantity-input" value="1" min="1"></p>
+                <p>Dairy Milk|Standard|Regular sugar|<br>Normal ice| No Topping</p>
+                <p>$7.99</p>
+            </div>
+        </div>
+        <div class="payment-info">
+            <h2>Payment Information</h2>
+            <p>Please select your preferred payment method:</p>
+            <select class="payment-method">
+                <option value="credit_card">Credit Card</option>
+                <option value="debit_card">Debit Card</option>
+				 <option value="E_Wallet">E-Wallet</option>
+                <option value="Cash On Delivery">Cash On Delivery</option>
+            </select>
+        </div>
+        <div class="cart-summary">
+            <h2>Order Summary</h2>
+            <div>
+                <p>Total Items: <span id="total-items">3</span></p>
+                <p>Total Price: <span id="total-price">$20.97</span></p>
+            </div>
+        </div>
+        <button class="btn-checkout">Proceed to Checkout</button>
+    </div>
+</body>
+</html>
