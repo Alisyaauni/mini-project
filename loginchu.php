@@ -94,7 +94,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
         <table border="0">
             <tr>
                 <td colspan="2">
-                    <img src="cat.png" width="100" height="100" alt="Cat Image">
+                    <img src="gambar/cat.png" width="100" height="100" alt="Cat Image">
                 </td>
             </tr>
             <tr>

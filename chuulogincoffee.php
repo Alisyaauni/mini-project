@@ -114,7 +114,7 @@ function check_login($conn) {
             </tr>
             <tr>
                 <td colspan="2">
-                    <img src="cat.png" alt="Cat Image" width="150" height="150">
+                    <img src="gambar/cat.png" alt="Cat Image" width="150" height="150">
                 </td>
             </tr>
         </table>
