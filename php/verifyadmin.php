@@ -8,7 +8,7 @@ if(isset($_POST['submit'])) {
    
 }
 
-header("Location: admin.html");
+header("Location: ./admin.html");
      exit;
 
 ?>

@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					
 					
                     // Redirect to myfirstwebsite.html after successful login	
-                    header("Location: chuucoffeemenu.html");
+                    header("Location: ./chuucoffeemenu.html");
                     exit;
                 } else {
                     echo "Incorrect password.";
