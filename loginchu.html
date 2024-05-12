@@ -8,62 +8,64 @@
             background-color: #d9b99b;
             font-family: Arial, sans-serif;
         }
-        form {
+    
+        .form-container {
             margin-top: 50px;
             display: inline-block;
+            background-color: #A79277;
+            border: 2px solid #A79277; /* Border style */
+            padding: 50px; /* Padding inside the box */
+            border-radius: 10px; /* Rounded corners */
         }
+    
         table {
-            margin: 0 auto;
+            margin: 1 auto;
         }
+    
         img {
             display: block;
-            margin: 0 auto 20px;
+            margin: 0 auto;
+            margin-top: 50px; /* Adjust margin-top as needed */
+            width: 200px; /* Adjust width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
+    
         input[type="text"],
         input[type="password"],
         input[type="submit"] {
             width: 250px;
             padding: 10px;
             margin-bottom: 15px;
-            border: 1px solid #ccc;
+            border: 0px solid #ccc;
             border-radius: 5px;
             font-size: 16px;
         }
+    
         a {
             text-decoration: none;
-            color: #4CAF50;
+            color: #803D3B;
             font-weight: bold;
-            margin-left: 10px;
+            margin-left: 20px;
+            margin-right: 20px;
         }
+
+       
     </style>
+    
 </head>
 <body>
+    <div class = "form-container">
     <form method="post" action="loginchu.php">
-        <table border="0">
-            <tr>
-                <td colspan="2">
-                    <img src="gambar/cat.png" width="100" height="100" alt="Cat Image">
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;"><font color="brown" size="5">Email:</font></td>
-                <td style="text-align: left;"><input type="text" name="email"></td>
-            </tr>
-            <tr>
-                <td style="text-align: right;"><font color="brown" size="5">Password:</font></td>
-                <td style="text-align: left;"><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td align="right">
-                    <input type="submit" value="Login"/>
-                    <a href="chuulogincoffee.php">Register</a>
-                    <a href="verifyadmin.html">Login as Admin</a>
-                </td>
-            </tr>
-        </table>
+        <img src="gambar/cat.png" width="200" height="200" alt="Cat Image"><br>
+        <input type="text" name="email" placeholder="Email"><br>
+        <input type="password" name="password" placeholder="Password"><br>
+        <input type="submit" value="Login"/><br>
+        <a href="chuulogincoffee.php">Register</a>
+        <a href="verifyadmin.html">Login as Admin</a>
     </form>
+</div>
 </body>
 </html>
+
 
 
