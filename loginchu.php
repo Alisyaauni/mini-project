@@ -35,7 +35,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
 					
 					
                     // Redirect to myfirstwebsite.html after successful login	
-                    header("Location: myfirstwebsite.html");
+                    header("Location: chuucoffeemenu.html");
                     exit;
                 } else {
                     echo "Incorrect password.";
@@ -49,72 +49,3 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
     }
 }
 ?>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>ChuuLogin</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #f7f7f7;
-            font-family: Arial, sans-serif;
-        }
-        form {
-            margin-top: 50px;
-            display: inline-block;
-        }
-        table {
-            margin: 0 auto;
-        }
-        img {
-            display: block;
-            margin: 0 auto 20px;
-        }
-        input[type="text"],
-        input[type="password"],
-        input[type="submit"] {
-            width: 250px;
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            font-size: 16px;
-        }
-        a {
-            text-decoration: none;
-            color: #4CAF50;
-            font-weight: bold;
-            margin-left: 10px;
-        }
-    </style>
-</head>
-<body>
-    <form method="post" action="">
-        <table border="0">
-            <tr>
-                <td colspan="2">
-                    <img src="gambar/cat.png" width="100" height="100" alt="Cat Image">
-                </td>
-            </tr>
-            <tr>
-                <td style="text-align: right;"><font color="brown" size="5">Email:</font></td>
-                <td style="text-align: left;"><input type="text" name="email"></td>
-            </tr>
-            <tr>
-                <td style="text-align: right;"><font color="brown" size="5">Password:</font></td>
-                <td style="text-align: left;"><input type="password" name="password"></td>
-            </tr>
-            <tr>
-                <td></td>
-                <td align="right">
-                    <input type="submit" value="Login"/>
-                    <a href="chuulogincoffee.php">Register</a>
-                </td>
-            </tr>
-        </table>
-    </form>
-</body>
-</html>
-
-
