@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ChuuCoffee Registration</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #A79277;
+            font-family: Arial, sans-serif;
+        }
+        .form-container {
+            margin: auto;
+            display:block;
+            width:400px;
+            background-color: #FEFAF6;
+            padding: 50px;
+            border-radius: 20px;
+         
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="submit"] {
+            width: 250px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            background-color: #803D3B;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        input[type="submit"]:hover {
+            background-color: #B0926A;
+        }
+        a {
+            text-decoration: none;
+            color: #607274;
+            font-weight: bold;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class = "form-container">
+    <form action="addrecord.php" method="post">
+        <h2 style="text-align: center;">ChuuCoffee Registration</h2>
+        <div style="text-align: center;">
+            <input type="text" name="fname" placeholder="First Name"><br>
+            <input type="text" name="lname" placeholder="Last Name"><br>
+            <input type="text" name="email" placeholder="Email"><br>
+            <input type="text" name="password" placeholder="Create Password"><br>
+            <input type="submit" value="Register">
+        </div>
+    </div>
+    </form>
+</body>
+
+</html>
+
+
+

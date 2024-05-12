@@ -16,7 +16,9 @@ VALUES ('$_POST[fname]','$_POST[lname]','$_POST[email]', '$_POST[password]')";
 
 if ($conn->query($sql) === TRUE) {
 	
-    echo "Record created";
+    echo "Successful Register";
+    header("Location: loginchu.html");
+    exit;
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }

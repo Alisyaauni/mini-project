@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
                     $_SESSION['email'] = $user_data['email'];
 					
 					
-                    // Redirect to myfirstwebsite.html after successful login	
+                    // Redirect to chuucoffeemenu.html after successful login	
                     header("Location: chuucoffeemenu.html");
                     exit;
                 } else {
