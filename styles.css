@@ -1,11 +1,53 @@
+/* Reset some default styles */
+body, h1, form, table {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3e5ab; /* Light coffee background color */
+    color: #4b3832; /* Darker text color */
+    line-height: 1.6;
+}
+
 .container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+    border-radius: 8px; /* Rounded corners */
     text-align: center;
 }
 
 h1 {
     margin-bottom: 30px;
+    font-size: 2.5em;
+    color: #6f4e37; /* Coffee brown color */
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="submit"] {
+    width: calc(100% - 22px); /* Full width minus padding */
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    background-color: #6f4e37; /* Coffee brown background */
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #5b3c2e; /* Darker coffee brown on hover */
 }
 
 .actions {
@@ -13,15 +55,45 @@ h1 {
 }
 
 .actions a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    background-color: #f0f0f0;
-    color: #333;
+    display: inline-block; /* Inline block for side-by-side display */
+    margin: 10px 5px; /* Margin around links */
+    padding: 10px 20px; /* Padding inside links */
+    background-color: #d7ccc8; /* Light coffee color */
+    color: #4b3832; /* Darker text color */
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .actions a:hover {
-    background-color: #e0e0e0;
+    background-color: #bcaaa4; /* Darker shade on hover */
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd; /* Light border */
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #d7ccc8; /* Light coffee color for headers */
+    color: #4b3832; /* Darker text color */
+}
+
+tr:nth-child(even) {
+    background-color: #f5f5f5; /* Alternating row colors */
+}
+
+tr:hover {
+    background-color: #e0e0e0; /* Row highlight on hover */
+}
+

@@ -3,15 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e5ab; /* Light coffee background color */
+            color: #4b3832; /* Darker text color */
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 400px;
+            padding: 20px;
+            background-color: #fff; /* White background for the container */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+            border-radius: 8px; /* Rounded corners */
+            text-align: center;
+        }
+
+        h1 {
+            margin-bottom: 30px;
+            font-size: 2em;
+            color: #6f4e37; /* Coffee brown color */
+        }
+
+        form input[type="password"],
+        form input[type="submit"] {
+            width: calc(100% - 22px); /* Full width minus padding */
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form input[type="submit"] {
+            background-color: #6f4e37; /* Coffee brown background */
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form input[type="submit"]:hover {
+            background-color: #5b3c2e; /* Darker coffee brown on hover */
+        }
+    </style>
 </head>
 <body>
-    <form method ="post" action = "verifyadmin.php">
-        Password for Admin:
-        <input type="password" name="password">
-
-        <input type="submit" value="Login"/>
-    
-    </form>
+    <div class="container">
+        <h1>Admin Login</h1>
+        <form method="post" action="verifyadmin.php">
+            <label for="password">Password for Admin:</label>
+            <input type="password" name="password" id="password" required>
+            <input type="submit" value="Login"/>
+        </form>
+    </div>
 </body>
 </html>
